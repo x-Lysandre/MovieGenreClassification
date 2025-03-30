@@ -1,13 +1,12 @@
 # Movie Genre Classification
 
 ## Overview
-This project aims to classify movies based on their genres using machine learning and natural language processing (NLP) techniques. By leveraging movie titles and descriptions as input features, the model predicts the appropriate genre(s) for a given movie.
+This project aims to classify movies based on their genres using traditional machine learning techniques such as Naïve Bayes, Gaussian Naïve Bayes, and Logistic Regression. The classification is based on structured data.
 
 ## Features
-- Preprocessing of movie dataset (handling missing values, text cleaning, feature extraction)
+- Preprocessing of movie dataset (handling missing values, encoding categorical data)
 - Exploratory Data Analysis (EDA) to understand genre distribution
-- Machine learning models such as Logistic Regression, SVM, Random Forest, and XGBoost
-- Deep learning approaches using LSTMs, CNNs, and BERT for improved text classification
+- Machine learning models such as Naïve Bayes, Gaussian Naïve Bayes, and Logistic Regression
 - Model evaluation using accuracy, precision, recall, and F1-score
 - Visualization of results
 
@@ -23,20 +22,19 @@ The dataset consists of:
    - Check for missing values and handle them appropriately.
 
 ### 2. Preprocess the Data
-   - Convert text data into numerical format using TF-IDF or Word Embeddings.
-   - Encode categorical features (e.g., genres) using One-Hot Encoding or Multi-Label Binarization.
+   - Encode categorical features (e.g., genres) using One-Hot Encoding or Label Encoding.
    - Perform feature scaling if necessary.
 
 ### 3. Perform Exploratory Data Analysis (EDA)
    - Visualize genre distribution using count plots.
-   - Analyze word frequency in movie descriptions.
+   - Analyze basic statistics of numerical features.
 
 ### 4. Split the Dataset
    - Divide data into training and testing sets (e.g., 80%-20%).
 
 ### 5. Train a Classification Model
-   - Implement various ML models like Logistic Regression, SVM, Random Forest, and XGBoost.
-   - Experiment with deep learning models like LSTMs and CNNs for better performance.
+   - Implement various ML models like Naïve Bayes, Gaussian Naïve Bayes, and Logistic Regression.
+   - Tune hyperparameters for better performance.
 
 ### 6. Evaluate the Model
    - Measure accuracy, precision, recall, and F1-score.
@@ -46,7 +44,7 @@ The dataset consists of:
 ### Prerequisites
 Ensure you have Python installed along with the required libraries:
 ```bash
-pip install pandas numpy scikit-learn seaborn matplotlib nltk tensorflow torch transformers
+pip install pandas numpy scikit-learn seaborn matplotlib
 ```
 
 ## Usage
@@ -64,21 +62,17 @@ pip install pandas numpy scikit-learn seaborn matplotlib nltk tensorflow torch t
    ```
 
 ## Results
-- The trained model achieves high accuracy in predicting movie genres based on text features.
+- The trained model achieves reliable accuracy in predicting movie genres using structured data.
 - Visualization of genre distribution and model performance metrics.
 
 ## Future Improvements
-- Implement ensemble learning techniques.
-- Experiment with transformer models like BERT for enhanced classification.
+- Implement additional machine learning models like Decision Trees and Random Forest.
+- Explore ensemble learning techniques for improved accuracy.
 - Deploy the model as a web application using Flask or Streamlit.
 
-## Contributing
-Feel free to submit issues or pull requests to improve this project.
 
-## License
-This project is licensed under the MIT License.
+
 
 ---
 Happy Coding! 🚀
-
 
